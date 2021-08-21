@@ -30,7 +30,7 @@ Once the DLL is injected, you will have access to the following Tools:
 - WSL
 	1. Open the project root directory in WSL
 	```
-	make update
+	make update # OPTIONAL, updates the include/offsets.h file
 	make
 	```
 - Visual Studio 2019
