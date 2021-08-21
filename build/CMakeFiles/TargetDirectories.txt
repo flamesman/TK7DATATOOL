@@ -1,0 +1,3 @@
+C:/Users/Kelsey/Desktop/Lee/lab/TK7DATATOOL/build/CMakeFiles/tk7_datatool.dir
+C:/Users/Kelsey/Desktop/Lee/lab/TK7DATATOOL/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Kelsey/Desktop/Lee/lab/TK7DATATOOL/build/CMakeFiles/ZERO_CHECK.dir
