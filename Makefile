@@ -3,7 +3,7 @@ PROJECT=tk7_datatool
 # ifdef linux
 ifeq ($(shell uname), Linux)
 all:
-	powershell.exe -c "cmake.exe -B build" && \
+	powershell.exe -c "cmake.exe -A Win32 -B build" && \
 	powershell.exe -c "cmake.exe --build build --config Release"
 
 	# if ./bin/ does not exist make ./bin/

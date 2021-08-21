@@ -11,10 +11,12 @@ file(GLOB SOURCES src/*.cpp)
 ## ImGui Dependencies
 include_directories(imgui)
 
+## TODO change to DirectX11/12
 ## Includes
 include_directories(include)
 include_directories("C:\\Program Files (x86)\\Microsoft DirectX SDK (June 2010)\\Include")
 
+## TODO change to DirectX11/12
 ## Library
 link_directories("C:\\Program Files (x86)\\Microsoft DirectX SDK (June 2010)\\Lib/x64")
 
