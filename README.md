@@ -24,28 +24,26 @@ the <code>TekkenGame-Win64-Shipping.exe</code> process.
 Once the DLL is injected, you will have access to the following Tools:
 
 ## Build Instructions
+### Install Visual Studio 2019 with CMake Build tools first
+
 - WSL
-    1. install CMake for windows
-	2. install MinGW for windows and add MinGW/bin/ to PATH
-	3. cd into project root
-    ```
-	mkdir bin
-    make
-    ```
-- CMake
-    1. install cmake for windows
-    - Visual Studio 2019
-        1. open the project folder in Visual Studio 2019
-        2. ctrl + shift + b
-    - Powershell
-        1. open Powershell in project directory
-        ```
-        $ cmake -G "Visual Studio 2019" -A Win32 -B "build"
-        $ cmake --build "build" --config "Release"
-        ```
+	1. Open the project root directory in WSL
+	```
+	make
+	```
+- Visual Studio 2019
+	1. Open the project root directory in Visual Studio 2019
+	2. Build -> Build All <i>(Ctrl + Shift + B)</i>
+- PowerShell
+	1. Open the project root directory in PowerShell
+	```
+	mkdir bin build
+	cmake -G "Visual Studio 2019" -A Win32 -B "build"
+	cmake --build "build" --config "Release"
+	```
 
 ## Known Issues
-None
+- If you resize the game while the DLL is injected, the game WILL crash.
 
 ## Goals
 - [ ] Create Auto-updating script to pull addresses
