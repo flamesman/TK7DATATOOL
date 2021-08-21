@@ -3,10 +3,12 @@
 extern LRESULT ImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 
 Present oPresent;
-HWND window = NULL;
+
+HWND window = nullptr;
 WNDPROC oWndProc;
-ID3D11Device* pDevice = NULL;
-ID3D11DeviceContext* pContext = NULL;
+
+ID3D11Device* pDevice = nullptr;
+ID3D11DeviceContext* pContext = nullptr;
 ID3D11RenderTargetView* mainRenderTargetView;
 
 void InitImGui()
@@ -18,7 +20,7 @@ void InitImGui()
     ImGui_ImplDX11_Init(pDevice, pContext);
 }
 
-LRESULT __stdcall WndProc(const HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
+LRESULT WINAPI WndProc(const HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam) {
 
     if (true && ImGui_ImplWin32_WndProcHandler(hWnd, uMsg, wParam, lParam))
         return true;
@@ -26,10 +28,10 @@ LRESULT __stdcall WndProc(const HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lPar
     return CallWindowProc(oWndProc, hWnd, uMsg, wParam, lParam);
 }
 
-bool init = false;
-HRESULT __stdcall hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT Flags)
+bool bInit = false;
+HRESULT WINAPI hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT Flags)
 {
-    if (!init)
+    if (!bInit)
     {
         if (SUCCEEDED(pSwapChain->GetDevice(__uuidof(ID3D11Device), (void**)& pDevice)))
         {
@@ -39,11 +41,11 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT 
             window = sd.OutputWindow;
             ID3D11Texture2D* pBackBuffer;
             pSwapChain->GetBuffer(0, __uuidof(ID3D11Texture2D), (LPVOID*)& pBackBuffer);
-            pDevice->CreateRenderTargetView(pBackBuffer, NULL, &mainRenderTargetView);
+            pDevice->CreateRenderTargetView(pBackBuffer, nullptr, &mainRenderTargetView);
             pBackBuffer->Release();
             oWndProc = (WNDPROC)SetWindowLongPtr(window, GWLP_WNDPROC, (LONG_PTR)WndProc);
             InitImGui();
-            init = true;
+            bInit = true;
         }
 
         else
@@ -59,36 +61,38 @@ HRESULT __stdcall hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT 
 
     ImGui::Render();
 
-    pContext->OMSetRenderTargets(1, &mainRenderTargetView, NULL);
+    pContext->OMSetRenderTargets(1, &mainRenderTargetView, nullptr);
     ImGui_ImplDX11_RenderDrawData(ImGui::GetDrawData());
     return oPresent(pSwapChain, SyncInterval, Flags);
 }
 
 DWORD WINAPI MainThread(LPVOID lpReserved)
 {
-    bool init_hook = false;
+    bool bInitHook = false;
     do
     {
         if (kiero::init(kiero::RenderType::D3D11) == kiero::Status::Success)
         {
-            kiero::bind(8, (void**)& oPresent, hkPresent);
-            init_hook = true;
+            kiero::bind(8, (void **)& oPresent, hkPresent);
+            bInitHook = true;
         }
-    } while (!init_hook);
+    } while (!bInitHook);
+
     return TRUE;
 }
 
-BOOL WINAPI DllMain(HMODULE hMod, DWORD dwReason, LPVOID lpReserved)
+BOOL WINAPI DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
 {
     switch (dwReason)
     {
-    case DLL_PROCESS_ATTACH:
-        DisableThreadLibraryCalls(hMod);
-        CreateThread(nullptr, 0, MainThread, hMod, 0, nullptr);
-        break;
-    case DLL_PROCESS_DETACH:
-        kiero::shutdown();
-        break;
+		case DLL_PROCESS_ATTACH:
+			DisableThreadLibraryCalls((HMODULE)hInstance);
+			CreateThread(nullptr, 0, MainThread, (HMODULE)hInstance, 0, nullptr);
+			break;
+		case DLL_PROCESS_DETACH:
+			kiero::shutdown();
+			break;
     }
+
     return TRUE;
 }
