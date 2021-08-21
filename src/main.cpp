@@ -52,17 +52,11 @@ HRESULT WINAPI hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT Fla
             return oPresent(pSwapChain, SyncInterval, Flags);
     }
 
-    ImGui_ImplDX11_NewFrame();
-    ImGui_ImplWin32_NewFrame();
-    ImGui::NewFrame();
-
-    ImGui::Begin("ImGui Window");
-    ImGui::End();
-
-    ImGui::Render();
+	Render::MainUI();
 
     pContext->OMSetRenderTargets(1, &mainRenderTargetView, nullptr);
     ImGui_ImplDX11_RenderDrawData(ImGui::GetDrawData());
+
     return oPresent(pSwapChain, SyncInterval, Flags);
 }
 
