@@ -6,7 +6,7 @@ all:
 	powershell.exe -c "cmake.exe -B build" && \
 	powershell.exe -c "cmake.exe --build build --config Release"
 	
-	mkdir -p bin
+	if ! [ -d bin ]; then mkdir -p bin; fi
 	cp ./build/Release/tk7_datatool.dll ./bin/
 
 clean:
@@ -14,8 +14,7 @@ clean:
 	rm -fr ./build/**
 
 update:
-	touch resources/temp.ini
-	rm resources/*.ini*
+	if [ -f resources/memory_address.ini ]; then rm resources/memory_address.ini; fi
 	wget -P resources/ https://raw.githubusercontent.com/WAZAAAAA0/TekkenBot/master/TekkenData/memory_address.ini
 	python3 generate_offsets.py
 
