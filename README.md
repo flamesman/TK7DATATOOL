@@ -1,4 +1,4 @@
-#Tekken 7 Data Analytics Tool
+# Tekken 7 Data Analytics Tool
 ### Timeline
 - Project started: 08/20/2021
 
