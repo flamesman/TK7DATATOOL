@@ -1,4 +1,3 @@
-
 # Created by https://www.toptal.com/developers/gitignore/api/c++,cmake,visualstudio
 # Edit at https://www.toptal.com/developers/gitignore?templates=c++,cmake,visualstudio
 
@@ -445,3 +444,11 @@ FodyWeavers.xsd
 # Additional files built by Visual Studio
 
 # End of https://www.toptal.com/developers/gitignore/api/c++,cmake,visualstudio
+
+
+## Vim CoC utilities
+compile_flags.txt
+
+## CMake output
+bin/
+build/
