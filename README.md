@@ -19,7 +19,7 @@
 
 ## How It Works
 Use any DLL injector that you are comfortable with to inject the file into  
-the <code>tk7winshipping64.exe</code> process. 
+the <code>TekkenGame-Win64-Shipping.exe</code> process. 
 
 Once the DLL is injected, you will have access to the following Tools:
 
