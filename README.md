@@ -1,6 +1,7 @@
 # Tekken 7 Data Analytics Tool
 ### Timeline
 - Project started: 08/20/2021
+- Auto-update script added: 08/21/2021
 
 ## Overview & Demonstration
 [ TODO ]
@@ -29,6 +30,7 @@ Once the DLL is injected, you will have access to the following Tools:
 - WSL
 	1. Open the project root directory in WSL
 	```
+	make update
 	make
 	```
 - Visual Studio 2019
@@ -46,4 +48,4 @@ Once the DLL is injected, you will have access to the following Tools:
 - If you resize the game while the DLL is injected, the game WILL crash.
 
 ## Goals
-- [ ] Create Auto-updating script to pull addresses
+- [x] Create Auto-updating script to pull addresses (August 21, 2021)

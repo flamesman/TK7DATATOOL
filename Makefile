@@ -14,8 +14,10 @@ clean:
 	rm -fr ./build/**
 
 update:
+	touch resources/temp.ini
 	rm resources/*.ini*
 	wget -P resources/ https://raw.githubusercontent.com/WAZAAAAA0/TekkenBot/master/TekkenData/memory_address.ini
+	python3 generate_offsets.py
 
 else
 # elsif Windows
@@ -31,7 +33,7 @@ all:
 #TODO
 clean:
 	rm ./bin/** -A
-	rm ./bin/** -A
+	rm ./build/** -A
 
 #TODO
 update:
