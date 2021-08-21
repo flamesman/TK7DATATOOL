@@ -1,0 +1,12 @@
+[ TODO ]
+ - Player
+	- Default Side
+	- Current Side
+	- Current Frame Status
+	- X, Y, Z Coordinates
+	- Current Distance from Enemy
+ - Enemy
+	- Current Side
+	- Current Frame Status
+	- X, Y, Z Coordinates
+	- Current Distance from Player
