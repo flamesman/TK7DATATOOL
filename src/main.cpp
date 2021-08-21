@@ -52,7 +52,7 @@ HRESULT WINAPI hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT Fla
             return oPresent(pSwapChain, SyncInterval, Flags);
     }
 
-	Render::MainUI();
+    Render::MainUI();
 
     pContext->OMSetRenderTargets(1, &mainRenderTargetView, nullptr);
     ImGui_ImplDX11_RenderDrawData(ImGui::GetDrawData());
@@ -79,13 +79,13 @@ BOOL WINAPI DllMain(HINSTANCE hInstance, DWORD dwReason, LPVOID lpReserved)
 {
     switch (dwReason)
     {
-		case DLL_PROCESS_ATTACH:
-			DisableThreadLibraryCalls((HMODULE)hInstance);
-			CreateThread(nullptr, 0, MainThread, (HMODULE)hInstance, 0, nullptr);
-			break;
-		case DLL_PROCESS_DETACH:
-			kiero::shutdown();
-			break;
+        case DLL_PROCESS_ATTACH:
+            DisableThreadLibraryCalls((HMODULE)hInstance);
+            CreateThread(nullptr, 0, MainThread, (HMODULE)hInstance, 0, nullptr);
+            break;
+        case DLL_PROCESS_DETACH:
+            kiero::shutdown();
+            break;
     }
 
     return TRUE;
