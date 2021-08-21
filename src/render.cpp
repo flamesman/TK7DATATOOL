@@ -1,10 +1,12 @@
 #include "render.h"
 
-ImVec2 vecWindowSize{125, 80};
-ImVec2 vecWindowPos{0,0};
+extern bool bPosition;
+extern bool bFrameData;
+extern bool bMaximizeMenu;
 
-bool bPosition = false;
-bool bFrameData = false;
+ImVec2 vecWindowSizeDefault{140, 80};
+ImVec2 vecWindowSizeMinimized{140, 0};
+ImVec2 vecWindowPosDefault{0,0};
 
 void Render::MainUI(void)
 {
@@ -15,15 +17,24 @@ void Render::MainUI(void)
 	//////////////////////////////////////
 	//////////////// Begin ///////////////
 	//////////////////////////////////////
-	ImGui::Begin("Data-Tool");
+	ImGui::Begin("Data-Tool (END)");
+	if (bMaximizeMenu)
+	{
+		// Size & Position
+		ImGui::SetWindowSize(vecWindowSizeDefault, 0);
+		ImGui::SetWindowPos(vecWindowPosDefault, 0);
+		
+		// Contents
+		ImGui::Checkbox("F1: Frame-data", &bFrameData);
+		ImGui::Checkbox("F2: Position", &bPosition);
+	}
+	else
+	{
+		// Size & Position
+		ImGui::SetWindowSize(vecWindowSizeMinimized, 0);
+		ImGui::SetWindowPos(vecWindowPosDefault, 0);
+	}
 
-	// Size & Position
-	ImGui::SetWindowSize(vecWindowSize, 0);
-	ImGui::SetWindowPos(vecWindowPos, 0);
-
-	// Contents
-	ImGui::Checkbox("Frame-data", &bFrameData);
-	ImGui::Checkbox("Position", &bPosition);
 
 	ImGui::End();
 	//////////////////////////////////////

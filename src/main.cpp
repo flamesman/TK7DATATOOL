@@ -11,6 +11,10 @@ ID3D11Device* pDevice = nullptr;
 ID3D11DeviceContext* pContext = nullptr;
 ID3D11RenderTargetView* mainRenderTargetView;
 
+bool bPosition = false;
+bool bFrameData = false;
+bool bMaximizeMenu = true;
+
 void InitImGui()
 {
     ImGui::CreateContext();
@@ -52,6 +56,7 @@ HRESULT WINAPI hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT Fla
             return oPresent(pSwapChain, SyncInterval, Flags);
     }
 
+	Events::HandleKeyboard();
     Render::MainUI();
 
     pContext->OMSetRenderTargets(1, &mainRenderTargetView, nullptr);
