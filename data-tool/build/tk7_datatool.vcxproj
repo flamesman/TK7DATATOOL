@@ -86,7 +86,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\imgui;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\build;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -105,10 +105,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";tk7_datatool_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\imgui;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\build;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\imgui;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\build;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -131,7 +131,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\imgui;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\build;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -150,10 +150,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";tk7_datatool_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\imgui;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\build;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\imgui;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\build;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -176,7 +176,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\imgui;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\build;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
@@ -195,10 +195,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";tk7_datatool_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\imgui;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\build;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\imgui;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\build;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -221,7 +221,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\imgui;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\build;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -239,10 +239,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";tk7_datatool_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\imgui;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\build;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\imgui;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\build;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool;C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include;C:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -321,18 +321,18 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\imgui\imgui.cpp" />
-    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\imgui\imgui_demo.cpp" />
-    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\imgui\imgui_draw.cpp" />
-    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\imgui\imgui_impl_dx11.cpp" />
-    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\imgui\imgui_impl_win32.cpp" />
-    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\imgui\imgui_widgets.cpp" />
-    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\kiero\kiero.cpp" />
-    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\kiero\minhook\src\buffer.c" />
-    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\kiero\minhook\src\hde\hde32.c" />
-    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\kiero\minhook\src\hde\hde64.c" />
-    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\kiero\minhook\src\hook.c" />
-    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\kiero\minhook\src\trampoline.c" />
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\imgui\imgui.cpp" />
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\imgui\imgui_demo.cpp" />
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\imgui\imgui_draw.cpp" />
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\kiero\kiero.cpp" />
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\kiero\minhook\src\buffer.c" />
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\kiero\minhook\src\hde\hde32.c" />
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\kiero\minhook\src\hde\hde64.c" />
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\kiero\minhook\src\hook.c" />
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\kiero\minhook\src\trampoline.c" />
     <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\src\drawing.cpp" />
     <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\src\events.cpp" />
     <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\src\main.cpp" />

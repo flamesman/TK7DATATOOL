@@ -1,40 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\imgui\imgui.cpp">
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\imgui\imgui.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\imgui\imgui_demo.cpp">
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\imgui\imgui_demo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\imgui\imgui_draw.cpp">
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\imgui\imgui_draw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\imgui\imgui_impl_dx11.cpp">
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\imgui\imgui_impl_dx11.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\imgui\imgui_impl_win32.cpp">
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\imgui\imgui_impl_win32.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\imgui\imgui_widgets.cpp">
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\imgui\imgui_widgets.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\kiero\kiero.cpp">
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\kiero\kiero.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\kiero\minhook\src\buffer.c">
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\kiero\minhook\src\buffer.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\kiero\minhook\src\hde\hde32.c">
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\kiero\minhook\src\hde\hde32.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\kiero\minhook\src\hde\hde64.c">
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\kiero\minhook\src\hde\hde64.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\kiero\minhook\src\hook.c">
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\kiero\minhook\src\hook.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\kiero\minhook\src\trampoline.c">
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\kiero\minhook\src\trampoline.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\src\drawing.cpp">
