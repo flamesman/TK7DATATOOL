@@ -1,12 +1,15 @@
-# Tekken 7 Data Analytics Tool
+# TK7DataTool - Tekken 7 Data Analytics Tool
 ### Timeline
 - Project started: 08/20/2021
 - Auto-update script added: 08/21/2021
+- Injector project added: 08/22/ 2021
 
 ## Overview & Demonstration
-[ TODO ]
+TK7DataTool is a tool that will assist a player with improving their  
+skills by providing them data*, tips**, and suggestions***.
 
-[ Demonstration image ]
+
+<img src="resources/Data-Tool(Alpha).png"/>
 
 ## Table of Contents
 - [What I Learned](#what-i-learned)
@@ -49,3 +52,8 @@ Once the DLL is injected, you will have access to the following Tools:
 
 ## Goals
 - [x] Create Auto-updating script to pull addresses (August 21, 2021)
+- [x] Create Self-injecting program for ease of access (August 22, 2021)
+
+*TODO
+**TODO
+***TODO

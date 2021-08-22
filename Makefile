@@ -3,11 +3,20 @@ PROJECT=tk7_datatool
 # ifdef Linux
 ifeq ($(shell uname), Linux)
 all:
+	@# Build Injector
+	cd ./injector && \
 	powershell.exe -c "cmake.exe -B build" && \
 	powershell.exe -c "cmake.exe --build build --config Release"
 	
+	@# Build Data Tool
+	cd ./data-tool && \
+	powershell.exe -c "cmake.exe -B build" && \
+	powershell.exe -c "cmake.exe --build build --config Release"
+	
+	@# Copy compiled files to ./bin
 	if ! [ -d bin ]; then mkdir -p bin; fi
-	cp ./build/Release/tk7_datatool.dll ./bin/
+	cp ./data-tool/build/Release/tk7_datatool.dll ./bin/
+	cp ./injector/build/Release/TK7-DataTool.exe ./bin
 
 clean:
 	rm -fr ./bin/**

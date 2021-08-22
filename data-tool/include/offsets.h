@@ -81,7 +81,7 @@ namespace Offsets
     std::vector<unsigned int> P2_CHAR_SELECT = { 0x033B4E68, 0x80, 0x584 };
     std::vector<unsigned int> STAGE_SELECT = { 0x033B4E68, 0x80, 0x78 };
     std::vector<unsigned int> WARMUP_PLAYER_NAME1 = { 0x033B4408, 0x50, 0x0 };
-    std::vector<unsigned int> WARMUP_PLAYER_WINS1 = { 0x033B4408, 0x50, -0x34 };
+    std::vector<int> WARMUP_PLAYER_WINS1 = { 0x033B4408, 0x50, -0x34 };
     std::vector<unsigned int> WARMUP_PLAYER_NAME2 = { 0x033B4408, 0x50, 0x140 };
     std::vector<unsigned int> WARMUP_PLAYER_WINS2 = { 0x033B4408, 0x50, 0x10C };
     unsigned int P1_MOVE_ID_NORB = 0x034D3154;

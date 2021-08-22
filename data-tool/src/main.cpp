@@ -4,16 +4,13 @@ extern LRESULT ImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam
 
 Present oPresent;
 
+uintptr_t module_base_addr = 0;
 HWND window = nullptr;
 WNDPROC oWndProc;
 
 ID3D11Device* pDevice = nullptr;
 ID3D11DeviceContext* pContext = nullptr;
 ID3D11RenderTargetView* mainRenderTargetView;
-
-bool bPosition = false;
-bool bFrameData = false;
-bool bMaximizeMenu = true;
 
 void InitImGui()
 {
@@ -67,6 +64,8 @@ HRESULT WINAPI hkPresent(IDXGISwapChain* pSwapChain, UINT SyncInterval, UINT Fla
 
 DWORD WINAPI MainThread(LPVOID lpReserved)
 {
+	module_base_addr = (uintptr_t)GetModuleHandle(nullptr);
+
     bool bInitHook = false;
     do
     {

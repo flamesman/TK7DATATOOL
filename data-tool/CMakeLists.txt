@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.7)
 
-project("TK7 Data Tool")
-
+project("TK7-DataTool")
 set(EXEC "tk7_datatool")
 
 set(CMAKE_C_STANDARD 17)

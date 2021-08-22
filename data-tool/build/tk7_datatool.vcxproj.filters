@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\imgui\imgui.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\imgui\imgui_demo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\imgui\imgui_draw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\imgui\imgui_impl_dx11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\imgui\imgui_impl_win32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\imgui\imgui_widgets.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\kiero\kiero.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\kiero\minhook\src\buffer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\kiero\minhook\src\hde\hde32.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\kiero\minhook\src\hde\hde64.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\kiero\minhook\src\hook.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\include\kiero\minhook\src\trampoline.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\src\drawing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\src\events.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\src\render.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Kelsey\Desktop\Lee\lab\TK7DATATOOL\data-tool\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C6A31FBF-E15F-3EA2-9284-674A968EDD52}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
